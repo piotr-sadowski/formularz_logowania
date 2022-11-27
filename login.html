@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css"> <!-- use an external style sheet -->
+  <script defer src="login.js"></script> <!-- use to define a client-side script (JavaScript), and execute after the HTML is loaded -->
+
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+	<div id="login-error-msg-holder"> <!-- css formating of the error message-->
+		<p id="login-error-msg">Incorrect username <span id="error-msg-second-line">or password</span></p> <!-- css formating of the error message for password-->
+	</div>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+  </main>
+</body>
+</html>
